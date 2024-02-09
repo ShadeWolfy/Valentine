@@ -1,0 +1,85 @@
+body {
+  font-family: "Bellota", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+section {
+  padding: 20px;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+section h2 {
+  margin-bottom: 0;
+}
+
+section:nth-child(even) {
+  background-color: #EFBFB3
+}
+
+section:nth-child(odd) {
+  background-color: #F5D3CE;
+}
+
+.image-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.image-with-heart {
+  -webkit-mask-image: url('images/heart-solid-svgrepo-com.svg');
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+  mask-image: url("images/heart-solid-svgrepo-com.svg");
+  mask-repeat: no-repeat;
+  mask-position: center;
+  width: 50%;
+  height: auto;
+  object-fit: cover;
+  margin: auto;
+}
+
+.button-container{
+  display: flex;
+  gap: 10px;
+}
+
+.heart-button {
+  background-color: #F2606C;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.hidden {
+  display: none;
+}
+
+.gift {
+  width: 50%;
+  height: auto;
+  margin: auto;
+}
+
+.gift-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; /* Add this line */
+  width: 100%;
+}
+
+#button5 {
+  background-color: #F2606C;
+  color: white;
+  border: none;
+  cursor: pointer;
+  width: 50%;
+  aspect-ratio: 16/9;
+}
